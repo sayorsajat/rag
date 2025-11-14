@@ -46,7 +46,7 @@ def load_and_prepare_documents():
         recipe_text = f"Name: {item['name']}\n"
         recipe_text += f"Category: {item['category']}\n"
         recipe_text += f"{'contains alcohol' if item['alcoholic'] == 1 else 'non-alcoholic'}\n"
-        recipe_text += f"Szkło: {item['glass']}\n"
+        recipe_text += f"glass: {item['glass']}\n"
 
         if tags_str:
             recipe_text += f"tags: {tags_str}\n"
